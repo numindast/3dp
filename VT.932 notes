@@ -6,8 +6,13 @@ General state of features over a stock Trident:
  - Heater mat RTV'd along edges to build plate.
  - Wago (genuine) connectors for all mains wiring with ferruled wires.
  - Heatsink with (very) kludgy thermistor attached with RTV for the SSR.
- - Fysetc CAN stealthburner toolhead PCB. Note, cable is sheathed as it came from Fysetc inside drag chain. Considering umbilical.
+ - Fysetc CAN stealthburner toolhead PCB with Fysetc premade cable as a rough umbilical. Goal is to print A drive cable cover and (? piano wire? to help support the cable?)
+ - Y axis cable chain still in place. Gonna look into sensorless homing eventually but for now, it just has endstop pod wires, not exactly a heavy load, just not pretty.
  - Stealthburner with CAS fitting and ERCF filament sensor wired to toolhead PCB.
+   (update 4/5/2023: thanks to [Dave]'s video at https://www.youtube.com/watch?v=L1gxBCiE0pk (also pinned in discord #afterburner_and_stealthburner_questions)
+ - BTT PiTFT 5" LCD with elegant skirt mount (DSI driven, capacitive touch, LED backlit, rotary encoder for brightness, powered by DSI)
+ - swapped the Pi 4b for a CM4 4gb/32gb on board with wifi (so 4104032) on a Waveshare carrier (CM4-IO-BASE-B rev4)
+ - Pi Camera v3 wide angle tucked over left side front idler. Need a better way to run the FPC cable. Might not be the best location.
 
 fan0: PA13 - nevermore
 fan1: PA14 - skirt fan
@@ -28,7 +33,12 @@ silkscreen errors: IN.0 (PA3) is actually 24v, not 5v as printed
 also CANL and CANH are "TX and RX" respectively as printed.
 
 --
->> next version of pi to run the show. will reclaim the pi 4b in there now.
-CM4-IO-BASE-B rev4
-Raspberry Pi 4104032
-hostname: voron-cm4
+since last update:
+installed TAP
+swapped Pi4b for CM4
+tore out X drag chain
+solved weird back-slanted bed mesh by adjusting the Y extrusion where it meets the frame (just on the right side) until bed mesh was much better
+put pi-cam-v3 on (standard angle) and deemed it too narrow for use in the enclosure, tried 3 spots, bought a wide angle.
+found mound of black abs dust gathered below the extruder atop the toolhead "cartridge". uh oh. spent a bunch of time diagnosing this.
+  another video by "Dave" on discord led to the correct way to fit the antisquish screw and adjust gear mesh. the former should 100% solve 
+  the grinding to dust issue. can't find worn pieces?
