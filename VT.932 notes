@@ -42,3 +42,11 @@ put pi-cam-v3 on (standard angle) and deemed it too narrow for use in the enclos
 found mound of black abs dust gathered below the extruder atop the toolhead "cartridge". uh oh. spent a bunch of time diagnosing this.
   another video by "Dave" on discord led to the correct way to fit the antisquish screw and adjust gear mesh. the former should 100% solve 
   the grinding to dust issue. can't find worn pieces?
+
+update 4/7/2023: got SB rebuilt and live adjusted Y extrusion on right side again, ran the probe accuracy scripts, came out decent. 
+Installed new wide angle pi camera, oh boy is it wide. Can see one of my monitors.
+
+however new problems: 
+extruder has a nice click when retracting / unretracting. maybe set the gear mesh a little too loose
+The big issue is loud grinding when Z is +25 or so and in a big move. Printer needs to be stripped down at least partly to determine why this change happened. 
+suspect it's the front left.
