@@ -50,3 +50,13 @@ however new problems:
 extruder has a nice click when retracting / unretracting. maybe set the gear mesh a little too loose
 The big issue is loud grinding when Z is +25 or so and in a big move. Printer needs to be stripped down at least partly to determine why this change happened. 
 suspect it's the front left.
+
+--
+new update 4/23/2023
+ - Overheating toolhead pcb! While printing a small batch of small parts, all close together, the toolhead MCU jumped to just over 100°C and crashed
+   with an adc temp error. This was while I had no cover installed at all. I found a SB cable cover with 3010 fan and built it out. Downside it runs
+   at all times when the printer is powered (currently using IN.0 for its 24v and ground, the PB6 pin is unused). Should split with the toolhead heat sink
+   fan so it will go on and off.
+ - Got two "production" and one "fixer upper" Disco on a Sticks from deathbyxbox to install along top frame L, front, R. Looks great. Working on baffles
+   when the toolhead MCU crashed.
+   
