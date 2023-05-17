@@ -7,12 +7,15 @@ General state of features over a stock Trident:
  - Wago (genuine) connectors for all mains wiring with ferruled wires.
  - Heatsink with (very) kludgy thermistor attached with RTV for the SSR.
  - Fysetc CAN stealthburner toolhead PCB with Fysetc premade cable as a rough umbilical. Goal is to print A drive cable cover and (? piano wire? to help support the cable?)
- - Y axis cable chain still in place. Gonna look into sensorless homing eventually but for now, it just has endstop pod wires, not exactly a heavy load, just not pretty.
+ - X and Y axis endstops relocated to side of TAP and back of right side Y extrusion. No more drag chains.
  - Stealthburner with CAS fitting and ERCF filament sensor wired to toolhead PCB.
    (update 4/5/2023: thanks to [Dave]'s video at https://www.youtube.com/watch?v=L1gxBCiE0pk (also pinned in discord #afterburner_and_stealthburner_questions)
  - BTT PiTFT 5" LCD with elegant skirt mount (DSI driven, capacitive touch, LED backlit, rotary encoder for brightness, powered by DSI)
  - swapped the Pi 4b for a CM4 4gb/32gb on board with wifi (so 4104032) on a Waveshare carrier (CM4-IO-BASE-B rev4)
  - Pi Camera v3 wide angle tucked over left side front idler. Need a better way to run the FPC cable. Might not be the best location.
+ - yawl-controller (esp8266) running WLED to drive 3 disco-on-a-sticks
+ - BME680 temp/humidity/barometer/gas sensor attached to Pi I2C
+ 
 
 fan0: PA13 - nevermore
 fan1: PA14 - skirt fan
@@ -60,3 +63,24 @@ new update 4/23/2023
  - Got two "production" and one "fixer upper" Disco on a Sticks from deathbyxbox to install along top frame L, front, R. Looks great. Working on baffles
    when the toolhead MCU crashed.
    
+--
+new update 5/16/2023
+Taking printer out of service to do a bunch of minor upgrades.
+ - 3 disco sticks with (18) SK6822 RGBCW's on each now installed with an esp8266-based "yawl-controller". Power is fed from the 5A available to a raspberry pi from the
+   Spider, which wasn't being used as I prefer the Meanwell 25-5 supply for the Pi with its separate AC power switch. The LEDs should not draw more than 3.1A but I should be
+   careful since dupont pin headers aren't rated for more than 2.5A. Having lights powered by the Spider does mean when the Spider is powered off, there's no lights.
+ - Added BME680 sensor wired to I2C on the Pi. Added the Pi as an MCU as well. Added to Klipper and it shows up on the Moonraker UI. That was easy. Found a print to mount it to
+   an extrusion.
+ - Relocate Y endstop switch to the back of the right side Y extrusion. Didn't seem to work on testing endstops in the GUI, need to break out a multimeter. Of course.
+   Bummer, I already fixed all the wiring in place and made it look neat. Before testing it. Dumb.
+ - ToDo: Rebuild TAP using r8 parts and better magnets. Add X endstop switch there. Thinking about rebuilding SB with a better print but that's a hassle and may just skip it.
+ - ToDo: build new Nevermore and mount in the back, pointing upward
+ - ToDo: rebuild SB cover fan wiring to share toolhead's fan output for the cold side heatsink. Why? We need IN.0 for the new X endstop switch.
+ 
+Far off in the future todo's:
+  - ERCF
+  - TinyFan v2 board + 4 wires added to umbilical = add PWM fan with tachometer to toolhead cold side heatsink fan. Macros available to monitor the fan speed and shut down
+    the print job to protect against clogs deep in the hot end.
+  - Serial connection to UART2 on the Pi4b for the WLED controller, so no wifi necessary to operate WLED (this is a big maybe .. is it even worth the effort, since I like the GUI?)
+  - Redo BME680 wires with slightly longer, hopefully much prettier wire or cable
+  
