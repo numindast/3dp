@@ -17,6 +17,7 @@ General state of features over a stock Trident:
  - BME680 temp/humidity/barometer/gas sensor attached to Pi I2C
  
 
+--- note: the fans were redone. need to check
 fan0: PA13 - nevermore
 fan1: PA14 - skirt fan
 fan2: PB2 - skirt fan
@@ -26,7 +27,6 @@ use IO.2 on sb-can-toolhead.
 pin1 = 5v (NOTE: silkscreen says 24v, however wiki has well documented this error and it really is 5v.)
 pin2 = gnd
 pin3 = signal / IO.2 (PB7)
-
 pin3 = closest to stepper connector.
 
 toolhead pcb:
@@ -34,6 +34,11 @@ silkscreen errors: IO.2 (PB7) silkscreen says 24v, this is actually 5v
 silkscreen errors: (PB6) is actually 24v, not 5v as printed
 silkscreen errors: IN.0 (PA3) is actually 24v, not 5v as printed
 also CANL and CANH are "TX and RX" respectively as printed.
+
+IN.0 = will be for X endstop
+IO.1 = ERCF filament sensor
+IO.2 = optoTAP sensor
+
 
 --
 since last update:
