@@ -3,10 +3,10 @@ General state of features over a stock Trident:
  - Dual power switches. One for the 5v PSU to allow the Pi to be powered separately from the controller.
  - All wires ferruled or nylon shrink spade receptacles (etc).
  - Thermal fuse RTV'd onto the heat mat rather than at the edge.
- - Heater mat RTV'd along edges to build plate.
+ - Heater mat RTV'd along edges to build plate. (It is not melting off. I messed with it before the RTV set, so it looks like salvador dali's print bed.)
  - Wago (genuine) connectors for all mains wiring with ferruled wires.
- - Heatsink with (very) kludgy thermistor attached with RTV for the SSR.
- - Fysetc CAN stealthburner toolhead PCB with Fysetc premade cable as a rough umbilical. Goal is to print A drive cable cover and (? piano wire? to help support the cable?)
+ - Heatsink with (very) kludgy thermistor attached with RTV for the SSR. In practice, it barely throws off any heat.
+ - Fysetc CAN stealthburner toolhead PCB with Fysetc premade cable as a rough umbilical.
  - X and Y axis endstops relocated to side of TAP and back of right side Y extrusion. No more drag chains.
  - Stealthburner with CAS fitting and ERCF filament sensor wired to toolhead PCB.
    (update 4/5/2023: thanks to [Dave]'s video at https://www.youtube.com/watch?v=L1gxBCiE0pk (also pinned in discord #afterburner_and_stealthburner_questions)
@@ -15,6 +15,8 @@ General state of features over a stock Trident:
  - Pi Camera v3 wide angle tucked over left side front idler. Need a better way to run the FPC cable. Might not be the best location.
  - yawl-controller (esp8266) running WLED to drive 3 disco-on-a-sticks
  - BME680 temp/humidity/barometer/gas sensor attached to Pi I2C
+ - Nevermore mounted vertical against back right with airflow going straight up
+ 
  
 
 --- note: the fans were redone. need to check
