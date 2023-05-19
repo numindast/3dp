@@ -39,7 +39,45 @@ IN.0 = will be for X endstop
 IO.1 = ERCF filament sensor
 IO.2 = optoTAP sensor
 
+--
+Compiling all the firmware.
+Yikes. This is a long way from an ender 3.
 
+Spider v2.2: https://wiki.fysetc.com/Spider/#421-menuconfig
+  1. Enable extra low level configuration options
+     1.1 Microcontroller architecture: STM32F446 / 12 MHz crystal / 32KIB BOOTLOADER / Serial (on USART1 PA10/PA9)
+     1.2 GPIO pins to set at startup: String = !PA13 (why? because the bright red LED for this unused fan port is annoying, and default at boot is ON)
+     1.3 make
+     
+  2. https://www.klipper3d.org/SDCard_Updates.html to flash it onto the Spider.
+       sudo service klipper stop
+       ./scripts/flash-sdcard.sh /dev/ttyAMA0  fysetc-spider
+       sudo service klipper start
+     
+Toolhead PCB: Fysetc SB-CAN-TH using whatever bootloader Fysetc put on it
+  Refer to https://wiki.fysetc.com/SB%20CAN%20ToolHead/#32-firmware-upload
+  
+  1. Enable extra low level configuration options
+     1.1 Microcontroller architecture: STM32F072 / no bootloader offset / 8 MHz crystal / CAN bus PB8/PB9 / CAN speed 500000
+  2. Flash to the toolhead:
+     2.1. Power down the printer, but keep Pi powered on. Attach USB cable from toolhead to the Pi. Power the printer back on.
+     2.2. Check 'lsusb' to show the toolhead board in DFU mode
+     3.3. dfu-util -R -a 0 -s 0x08000000:leave -D out/klipper.bin
+   
+Toolhead PCB: Fysetc SB-CAN-TH using CanBoot bootloader
+  NOTE: could not get this to work. I don't think it's entering the bootloader after flashing canboot, and there's no hardware reset/boot
+        switches to force entry into the bootloader.
+        
+  Refer to https://www.klipper3d.org/Bootloaders.html#stm32f103stm32f0x2-with-canboot-bootloader
+
+  LED is on PA1
+  CANbus UUID is 64f6fabd418a
+     
+ raspberry pi MCU: (used for the BME680 environmental sensor)
+   1. Microcontroller architecture: Linux process
+   2. make
+   3. make flash
+   
 --
 since last update:
 installed TAP
