@@ -17,9 +17,18 @@ General state of features over a stock Trident:
  - BME680 temp/humidity/barometer/gas sensor attached to Pi I2C
  - Nevermore mounted vertical against back right with airflow going straight up
  
- 
+~~~ TO DO ~~~
+1. move BME680 to opposite back extrusion. this way nevermore blows air past it for better readings
+2. wire covers for 2020 channels for lighting wiring
+3. buy black zip ties. seriously, day-glo orange?
+4. print more usable zip tie mounts that actually fit and are snug
+5. redo light bar baffles in white ABS or ASA
+6. serial connection from Pi to yawl-controller
+7. find a way to make the Pi camera FPC not ugly...
 
---- note: the fans were redone. need to check
+
+
+--- note: the fans were redone. redo this section
 fan0: PA13 - nevermore
 fan1: PA14 - skirt fan
 fan2: PB2 - skirt fan
