@@ -138,3 +138,11 @@ Far off in the future todo's:
   - Serial connection to UART2 on the Pi4b for the WLED controller, so no wifi necessary to operate WLED (this is a big maybe .. is it even worth the effort, since I like the GUI?)
   - Redo BME680 wires with slightly longer, hopefully much prettier wire or cable
   
+--
+new update 6/22/2023
+  - New: built teamfdm/window ventilation kit for voron exhaust (and printed/assembled the exhaust parts). Works great. Need to secure window against burglers.
+  - Broke: bme680. commented out in printer.cfg till the wiring can be looked at.
+  - ToDo: build a second stealthburner. This one will have the BTT toolhead pcb, which should allow me to use a 3-pin fan, and also bought a rainbow barf for the logo. And have the hardware now for TAP r8 kit.
+  - ToDo: purge bucket
+  - ToDo: reprint disco stick baffles in ASA white instead of black to enhance light spread and reduce sharp shadow steps.
+  
