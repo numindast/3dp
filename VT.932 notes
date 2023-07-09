@@ -146,3 +146,11 @@ new update 6/22/2023
   - ToDo: purge bucket
   - ToDo: reprint disco stick baffles in ASA white instead of black to enhance light spread and reduce sharp shadow steps.
   
+new update 7/8/2023
+  - printer died: toolhead 'mcu' ADC out of range (negative 10 celsius definitely qualifies). Unsure what happened yet. Did klipper update several times on the host RPi when I did not also update the toolhead 
+    mcu (etc). Perhaps it's time.
+  - new version of KAMP took some effort to fix up. No more voron purge, back to line purge.
+  - I officially hate universal auto rewinder. It has cost a lot of extruder overload leading to failed prints. This sucks.
+  - Purge bucket ready to mount
+  - White ASA LED baffles set to install on one stick
+
