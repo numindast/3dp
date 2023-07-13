@@ -154,3 +154,12 @@ new update 7/8/2023
   - Purge bucket ready to mount
   - White ASA LED baffles set to install on one stick
 
+new update 7/12/2023
+  - TE0 on the SB-CAN-TH appears to be dead. Tested against my older pcb, on which I broke the connector housing, but a (properly crimped!) JST-PH will still /snick/ into place. Using that pcb to run.
+  - Going to start on 2nd SB with SB2209 pretty soon. All the parts are sitting on my desk. This maybe supercedes all the other to-do's.
+       - Orion OD4010-24HB01A 3-pin axial fan for hot end.
+       - Sunon 24v 5015 blower (Mellow)
+       - LDO Motors LDO-36STH20-1004AHG pancake stepper for CW2, with RNC coated BMG clone gears
+       - Prewired Rainbow BARF toolhead LED logo, with resin printed diffuser/tray
+       - Polymaker ABS purple and black SB parts, already printed. This set would replace the (still perfectly fine!) parts printed on my Ender. Nostalgic?
+  - Still to do: relocate BME680/troubleshoot it, white LED baffles, purge bucket/brush, ... ercf 2.0 ... maybe ... many of these projects might have to wait until wintertime.
