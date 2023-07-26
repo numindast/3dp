@@ -163,3 +163,17 @@ new update 7/12/2023
        - Prewired Rainbow BARF toolhead LED logo, with resin printed diffuser/tray
        - Polymaker ABS purple and black SB parts, already printed. This set would replace the (still perfectly fine!) parts printed on my Ender. Nostalgic?
   - Still to do: relocate BME680/troubleshoot it, white LED baffles, purge bucket/brush, ... ercf 2.0 ... maybe ... many of these projects might have to wait until wintertime.
+
+new update 7/26/2023
+  - printer is still a-printin'. using that same toolhead pcb with the broken TE0 connector, hasn't been giving any problems. Still have not taken out of service.
+  - been researching better anti-tangle setups I can use in a drybox.
+  - reprinted some SB parts, sans overextrusion, and continuing build:
+      Runice RNC coated BMG extruder kit from dfh
+      CW2 w/ECAS04 plus filament sensor kit from dfh
+      Resin printed LED diffuser and carrier from Ether on Discord
+      Funssor pre-wired rainbow BARF and rgbw LEDs / ptfe wires
+      Sunon 5015 24v blower (Mellow on Aliexpress)
+      LDO-36STH20-1004AHG high temp stepper for extruder (Mellow on Aliexpress)
+      BTT EBB2209 two part toolhead pcb
+      Orion OD4010-24HB ball bearing 24v fan with speed sensor for heatsink.
+      Rapido HF hot end
