@@ -177,3 +177,9 @@ new update 7/26/2023
       BTT EBB2209 two part toolhead pcb
       Orion OD4010-24HB ball bearing 24v fan with speed sensor for heatsink.
       Rapido HF hot end
+
+new update 10/21/2023: Total Print Time	847h 34m 58s
+  - cc the top line in the last update. it's still printing and doing quite nicely thank you. very happy with this setup.
+  - side news: took a QC reject disco stick (with just sk6812cww's) and attached it to a yawl-controller powered with a USB battery bank with an inline switch. Our front closet is much happier.
+  - zero progress on mods or builds. the bme680 is still unused, as I don't care for it to cause klipper to shutdown if it suddenly disconnects from the pi again. kinda miss chamber temps.
+  
