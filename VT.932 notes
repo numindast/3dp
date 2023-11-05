@@ -183,3 +183,8 @@ new update 10/21/2023: Total Print Time	847h 34m 58s
   - side news: took a QC reject disco stick (with just sk6812cww's) and attached it to a yawl-controller powered with a USB battery bank with an inline switch. Our front closet is much happier.
   - zero progress on mods or builds. the bme680 is still unused, as I don't care for it to cause klipper to shutdown if it suddenly disconnects from the pi again. kinda miss chamber temps.
   
+new update 11/4/2023: Total Print Time 1033h 12m 37s
+  - printer is still a-printin'. however, printing ASA is getting frustrating as I think chamber temps (mid 50's at best) are not high enough. Getting layer splits on prints.
+  - installing 2 bed fans, driven by FAN0
+  - found loose pins on the BME680 on the Pi headers. Fixed. Still might redo the sensor with new 5-conductor silicon ribbon cable in the future.
+  - Toolhead was having issues with thermistor connection getting bad. Rerouted the wire and hope it stays in that busted connector. New toolhead with new PCB still waiting on build time.
