@@ -188,3 +188,8 @@ new update 11/4/2023: Total Print Time 1033h 12m 37s
   - installing 2 bed fans, driven by FAN0
   - found loose pins on the BME680 on the Pi headers. Fixed. Still might redo the sensor with new 5-conductor silicon ribbon cable in the future.
   - Toolhead was having issues with thermistor connection getting bad. Rerouted the wire and hope it stays in that busted connector. New toolhead with new PCB still waiting on build time.
+
+new update 11/7/2023
+  - so, the BTT smart filament sensor loves to trip the print pause when there's no issue, other than making tons of little dits for supports (frequent retraction and tiny extrudes).
+  - also, the timelapse (hyperlapse) sucks. it will trigger even when paused. which then causes an error and cancels the print. that really blows.
+    so you're changing filament, and the toolhead rips out of your hands to go take a picture, which fails because it was paused and the extruder isn't hot enough, and klipper bombs the job.
