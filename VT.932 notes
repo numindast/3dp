@@ -193,3 +193,9 @@ new update 11/7/2023
   - so, the BTT smart filament sensor loves to trip the print pause when there's no issue, other than making tons of little dits for supports (frequent retraction and tiny extrudes).
   - also, the timelapse (hyperlapse) sucks. it will trigger even when paused. which then causes an error and cancels the print. that really blows.
     so you're changing filament, and the toolhead rips out of your hands to go take a picture, which fails because it was paused and the extruder isn't hot enough, and klipper bombs the job.
+
+new update 11/15/2023: Total Print Time 1096h 10m 49s
+  - Re-re-rebuilt SB this time swapping extruder gears. The installed gears have done 100% of all prints so far, well above the hours as they predate the Pi CM4 install.
+    Swapped in a set from (dfh?west3d?) RNC hardened steel gears, Trianglelab I believe. To be checked. Been having under-extrusion events that are not because of partial blockages or other issues.
+    Reinstalled the SB and promptly had a toolhead crash which broke the Tap front. Shit. I can't find the MGN9 rail assembly tool that keeps the carriage's ball bearings in place to swap.
+    Reinstalled the broken TAP to try and see if I can coax a print out of this to redo that.
