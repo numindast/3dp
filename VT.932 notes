@@ -46,8 +46,8 @@ silkscreen errors: (PB6) is actually 24v, not 5v as printed
 silkscreen errors: IN.0 (PA3) is actually 24v, not 5v as printed
 also CANL and CANH are "TX and RX" respectively as printed.
 
-IN.0 = will be for X endstop
-IO.1 = ERCF filament sensor
+IN.0 = (was X endstop, but since the filament sensor switch is disconnected, moving x endstop for ease of JST-PH connecting.)
+IO.1 = X endstop (was ERCF filament sensor)
 IO.2 = optoTAP sensor
 
 --
@@ -198,4 +198,5 @@ new update 11/15/2023: Total Print Time 1096h 10m 49s
   - Re-re-rebuilt SB this time swapping extruder gears. The installed gears have done 100% of all prints so far, well above the hours as they predate the Pi CM4 install.
     Swapped in a set from (dfh?west3d?) RNC hardened steel gears, Trianglelab I believe. To be checked. Been having under-extrusion events that are not because of partial blockages or other issues.
     Reinstalled the SB and promptly had a toolhead crash which broke the Tap front. Shit. I can't find the MGN9 rail assembly tool that keeps the carriage's ball bearings in place to swap.
-    Reinstalled the broken TAP to try and see if I can coax a print out of this to redo that.
+    Reinstalled the broken TAP to try and see if I can coax a print out of this to redo that. Printed a tool and tried to start a long print but same extrusion pauses.
+  - Broke the latch on the clockwork. Had to disassemble/reassemble AGAIN with a spare. Also changed to a new 0.4 brass nozzle.
