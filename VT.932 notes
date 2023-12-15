@@ -200,3 +200,6 @@ new update 11/15/2023: Total Print Time 1096h 10m 49s
     Reinstalled the SB and promptly had a toolhead crash which broke the Tap front. Shit. I can't find the MGN9 rail assembly tool that keeps the carriage's ball bearings in place to swap.
     Reinstalled the broken TAP to try and see if I can coax a print out of this to redo that. Printed a tool and tried to start a long print but same extrusion pauses.
   - Broke the latch on the clockwork. Had to disassemble/reassemble AGAIN with a spare. Also changed to a new 0.4 brass nozzle.
+
+12/14/2023: 1374h
+  - now having extruder feed problems even after rebuilding. can print slowly. maybe sort out the new toolhead. have orbiter v2, might need printed parts.
