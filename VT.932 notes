@@ -203,3 +203,7 @@ new update 11/15/2023: Total Print Time 1096h 10m 49s
 
 12/14/2023: 1374h
   - now having extruder feed problems even after rebuilding. can print slowly. maybe sort out the new toolhead. have orbiter v2, might need printed parts.
+
+12/17/2023: 1375h
+  - Printed a bit more but still having issues. Did a full rebuild again. Changed direction and am re-tuning for the undertaker nozzle + new smooth bed w/ABS to print orbiter parts.
+  - Wish list: LRS-50-5 power supply. It'll fit. Can then feed 5v to yawl-controller so it's independent of the spider controller.
