@@ -207,3 +207,6 @@ new update 11/15/2023: Total Print Time 1096h 10m 49s
 12/17/2023: 1375h
   - Printed a bit more but still having issues. Did a full rebuild again. Changed direction and am re-tuning for the undertaker nozzle + new smooth bed w/ABS to print orbiter parts.
   - Wish list: LRS-50-5 power supply. It'll fit. Can then feed 5v to yawl-controller so it's independent of the spider controller.
+  - Multiple times TH0 has gotten janky and caused a klipper shutdown during prints. Pulled off the broken TH0 JST connector housing (left the pins intact) and soldered a JST-PH socket
+    to the bare pins on the board. Plugged in the thermistor to that. Doing more tuning prints, hopefully this TH0 will no longer be an issue, or at least long enough to build an
+    orbiter2 + btt toolhead.
