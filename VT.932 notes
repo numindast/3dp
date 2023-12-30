@@ -8,8 +8,10 @@ General state of features over a stock Trident:
  - Heatsink with (very) kludgy thermistor attached with RTV for the SSR. In practice, it barely throws off any heat.
  - Fysetc CAN stealthburner toolhead PCB with Fysetc premade cable as a rough umbilical.
  - X and Y axis endstops relocated to side of TAP and back of right side Y extrusion. No more drag chains.
- - Stealthburner with CAS fitting and ERCF filament sensor wired to toolhead PCB.
+ - (Toolhead #2) Stealthburner with CAS fitting and ERCF filament sensor wired to toolhead PCB.
    (update 4/5/2023: thanks to [Dave]'s video at https://www.youtube.com/watch?v=L1gxBCiE0pk (also pinned in discord #afterburner_and_stealthburner_questions)
+ - (Toolhead #1) Stealthburner with LDO Galileo 2 from dfh, no ercf useful stuff, just hopefully a more reliable extruder than #2 above is. This TH uses
+   the Rapido #1 with classic front face (no rainbow barf).
  - BTT PiTFT 5" LCD with elegant skirt mount (DSI driven, capacitive touch, LED backlit, rotary encoder for brightness, powered by DSI)
  - swapped the Pi 4b for a CM4 4gb/32gb on board with wifi (so 4104032) on a Waveshare carrier (CM4-IO-BASE-B rev4)
  - Pi Camera v3 wide angle tucked over left side front idler. Need a better way to run the FPC cable. Might not be the best location.
@@ -18,14 +20,11 @@ General state of features over a stock Trident:
  - Nevermore mounted vertical against back right with airflow going straight up
  
 ~~~ TO DO ~~~
-1. move BME680 to opposite back extrusion. this way nevermore blows air past it for better readings
 2. wire covers for 2020 channels for lighting wiring
-3. buy black zip ties. seriously, day-glo orange?
-4. print more usable zip tie mounts that actually fit and are snug
-5. redo light bar baffles in white ABS or ASA
+5. redo light bar baffles in white ABS or ASA - one of 3 done, looks great
 6. serial connection from Pi to yawl-controller
 7. find a way to make the Pi camera FPC not ugly...
-
+8. Replace non-silicone wiring for LED sticks with silicone. There's a poor connection somewhere and causes issues at startup.
 
 
 --- note: the fans were redone. redo this section
@@ -210,3 +209,9 @@ new update 11/15/2023: Total Print Time 1096h 10m 49s
   - Multiple times TH0 has gotten janky and caused a klipper shutdown during prints. Pulled off the broken TH0 JST connector housing (left the pins intact) and soldered a JST-PH socket
     to the bare pins on the board. Plugged in the thermistor to that. Doing more tuning prints, hopefully this TH0 will no longer be an issue, or at least long enough to build an
     orbiter2 + btt toolhead.
+
+12/29/2023: 
+  - Finished printing Galileo 2 extruder parts in ABS without issue. Switched to print some PLA for fun and had some rude skipping despite not being clogged, and decided then and there this CW2
+    was coming out and the Galileo2's time to be built has come. Perhaps I just built this one wrong. Perhaps I am using it wrong. I'm tired of rebuilding CW2.
+     - build notes: need to find a "fan cover" with umbilical mount, but note: umbilical mount looks like it's gonna need an M3x55 SHCS screw which there are zero of, to replace
+       the lower stepper screw. M3x50 is not long enough. there may be other, better ideas out on voronmods or printables or ...
