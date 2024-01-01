@@ -215,3 +215,7 @@ new update 11/15/2023: Total Print Time 1096h 10m 49s
     was coming out and the Galileo2's time to be built has come. Perhaps I just built this one wrong. Perhaps I am using it wrong. I'm tired of rebuilding CW2.
      - build notes: need to find a "fan cover" with umbilical mount, but note: umbilical mount looks like it's gonna need an M3x55 SHCS screw which there are zero of, to replace
        the lower stepper screw. M3x50 is not long enough. there may be other, better ideas out on voronmods or printables or ...
+
+1/1/2024: 1391h, or ? 0h since birth of galileo2 extruder?
+  - New extruder seems to be running like a champ. Working on (new)tuning a new brand PLA filament to see how the experience goes, then will re-check ABS tune and print some
+    parts to enable the umbilical and fancooled pcb.
