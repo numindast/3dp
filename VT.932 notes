@@ -219,3 +219,14 @@ new update 11/15/2023: Total Print Time 1096h 10m 49s
 1/1/2024: 1391h, or ? 0h since birth of galileo2 extruder?
   - New extruder seems to be running like a champ. Working on (new)tuning a new brand PLA filament to see how the experience goes, then will re-check ABS tune and print some
     parts to enable the umbilical and fancooled pcb.
+
+1/22/2024: 1479h 35m 41s (actively printing)
+  - TAP came noticeably loose. The entire toolhead could wiggle along the X plane by twisting, easily. I think these were new TAP prints and by now they are broken in. Tightened everything
+    down. Almost lost a few bearings from the TAP carriage. It's not smooth but smooth enough.
+  - Noticed the left top XY joint broke. Layer separation right where the very top meets the pulley support. That bolt is still on solid ground on top and bottom. Decided to print
+    replacements with Polymaker ABS Galactic Dark Grey (sparkle). Am considering using sparkle green for accent, if I like how it looks. With older parts still purple/black it'll be
+    my VT.Frankenstein.
+  - Had several bolts loose, tightened up all I could reach.
+To do:
+  - Fix BME680 wiring
+  - Reterminate LED stick wiring. Consider upgrading the Pi supply (5v/5a) and powering LED sticks from there. That would be very handy and would take the load off the controller.
