@@ -231,3 +231,13 @@ new update 11/15/2023: Total Print Time 1096h 10m 49s
 To do:
   - Fix BME680 wiring
   - Reterminate LED stick wiring. Consider upgrading the Pi supply (5v/5a) and powering LED sticks from there. That would be very handy and would take the load off the controller.
+
+1/27/2024: 1490h 15s
+  - Replaced broken top left XY joint. Didn't replace all the rest of the XY joints, they all look and feel solid, and having a pretty printer is not really a goal. Patchwork look is fine by me.
+  - Replaced janky motor-wire-wired-BME680 with better silicon jacket high strand wire between the Pi and the sensor.
+  - Replaced 25w 5v supply with 50w 5v supply, and wired yawl-controller's power to that instead of the controller board. Now the 5v supply (on its independent power switch) drives lighting too.
+  - Wired CM4 carrier module to get power from a hacked up USB-C cable rather than via the GPIO pins. 
+  - Relocated Nevermore to the other side. Broke the 2 pin inline connector so replaced with a wago-clone-thing.
+  - The lighting's flakiness was due to loose connection on the screw terminals at the yawl-controller. Made sure those are all tight, no problems, skipping replacing the wire, doing
+    JST pins on silicone wire sucks.
+  - Printed a test cube with foggy grey/purple pla. Came out snazzy. Printer back in action.
