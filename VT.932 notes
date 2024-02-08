@@ -241,3 +241,7 @@ To do:
   - The lighting's flakiness was due to loose connection on the screw terminals at the yawl-controller. Made sure those are all tight, no problems, skipping replacing the wire, doing
     JST pins on silicone wire sucks.
   - Printed a test cube with foggy grey/purple pla. Came out snazzy. Printer back in action.
+
+2/8/2024: 1563h 38m 6s
+  - Adding Fysetc Hotkey Buttons to the skirts, new skirts needed. also bought a 4-pin fan for the exhaust, need to print tinyfan mount. after that going to cut some reflectix
+    for the back of the printer. Did a Klipper update and now none of the MCUs will talk until they are updated, so working on that next.
