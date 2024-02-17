@@ -245,3 +245,12 @@ To do:
 2/8/2024: 1563h 38m 6s
   - Adding Fysetc Hotkey Buttons to the skirts, new skirts needed. also bought a 4-pin fan for the exhaust, need to print tinyfan mount. after that going to cut some reflectix
     for the back of the printer. Did a Klipper update and now none of the MCUs will talk until they are updated, so working on that next.
+
+2/16/2024: 1581h 58m 26s
+  - Cooked the Fysetc SB-CAN-TH and the UCAN via what appear to be loose ground connections at the 24v power supply. Confirmed by buying a new UCAN and hooking both the in-use
+    toolhead pcb and the old one with a broken TH0. Old one came alive on the CAN bus, in-use one would not.
+  - Tightened up every screw in existence.
+  - Installed Galileo 2 onto new SB with BTT EBB SB2209 toolhead board and ran new umbilical. Using this with Fysetc UCAN. Works great.
+    The new SB has rainbow barf logo, 4 pin CUI Devices 4010 fan for hotend (now reports RPM!), and a Sunon Maglev blower (two wire).
+  - Installed new ChaoticLabs CNC TAP v2.
+  - Having serious issues loading filament. It gets stuck at multiple points before exiting the extruder. Need to investigate further / reprint extruder parts maybe.
