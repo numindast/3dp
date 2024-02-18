@@ -1,24 +1,22 @@
 General state of features over a stock Trident:
 
  - Dual power switches. One for the 5v PSU to allow the Pi to be powered separately from the controller.
- - All wires ferruled or nylon shrink spade receptacles (etc).
  - Thermal fuse RTV'd onto the heat mat rather than at the edge.
  - Heater mat RTV'd along edges to build plate. (It is not melting off. I messed with it before the RTV set, so it looks like salvador dali's print bed.)
  - Wago (genuine) connectors for all mains wiring with ferruled wires.
  - Heatsink with (very) kludgy thermistor attached with RTV for the SSR. In practice, it barely throws off any heat.
- - Fysetc CAN stealthburner toolhead PCB with Fysetc premade cable as a rough umbilical.
+ - BTT SB2209 toolhead CAN board and umbilical.
  - X and Y axis endstops relocated to side of TAP and back of right side Y extrusion. No more drag chains.
- - (Toolhead #2) Stealthburner with CAS fitting and ERCF filament sensor wired to toolhead PCB.
-   (update 4/5/2023: thanks to [Dave]'s video at https://www.youtube.com/watch?v=L1gxBCiE0pk (also pinned in discord #afterburner_and_stealthburner_questions)
- - (Toolhead #1) Stealthburner with LDO Galileo 2 from dfh, no ercf useful stuff, just hopefully a more reliable extruder than #2 above is. This TH uses
-   the Rapido #1 with classic front face (no rainbow barf).
+ - Stealthburner with LDO Galileo 2 from dfh and Rapido HF and rainbow barf logo LEDs
  - BTT PiTFT 5" LCD with elegant skirt mount (DSI driven, capacitive touch, LED backlit, rotary encoder for brightness, powered by DSI)
- - swapped the Pi 4b for a CM4 4gb/32gb on board with wifi (so 4104032) on a Waveshare carrier (CM4-IO-BASE-B rev4)
+ - Raspberry Pi CM4 4gb/32gb on board with wifi (so 4104032) on a Waveshare carrier (CM4-IO-BASE-B rev4)
  - Pi Camera v3 wide angle tucked over left side front idler. Need a better way to run the FPC cable. Might not be the best location.
  - yawl-controller (esp8266) running WLED to drive 3 disco-on-a-sticks
  - BME680 temp/humidity/barometer/gas sensor attached to Pi I2C
  - Nevermore mounted vertical against back right with airflow going straight up
- 
+ - Two bed fans
+ - Tinyfan controller with 4-wire exhaust fan
+
 ~~~ TO DO ~~~
 2. wire covers for 2020 channels for lighting wiring
 5. redo light bar baffles in white ABS or ASA - one of 3 done, looks great
@@ -26,11 +24,13 @@ General state of features over a stock Trident:
 7. find a way to make the Pi camera FPC not ugly...
 8. Replace non-silicone wiring for LED sticks with silicone. There's a poor connection somewhere and causes issues at startup.
 
+tinyfan pins: 
+  FAN1_PWM, FAN1_RPM (for the exhaust fan)
+  FAN4_PWM (for the skirt fans)
+  LED (ws2812 on board?)
 
---- note: the fans were redone. redo this section
-fan0: PA13 - nevermore
-fan1: PA14 - skirt fan
-fan2: PB2 - skirt fan
+controller fans:
+  fan0: PA13 - nevermore
 
 optoTAP:
 use IO.2 on sb-can-toolhead.
@@ -254,3 +254,11 @@ To do:
     The new SB has rainbow barf logo, 4 pin CUI Devices 4010 fan for hotend (now reports RPM!), and a Sunon Maglev blower (two wire).
   - Installed new ChaoticLabs CNC TAP v2.
   - Having serious issues loading filament. It gets stuck at multiple points before exiting the extruder. Need to investigate further / reprint extruder parts maybe.
+
+2/17/2024: 1590h 21m 12s
+  - New toolhead is working well, with the caveat that loading filament absolutely sucks. Plan is to fix up everything else on the printer that's been needing attention and circle
+    back to this, perhaps with a re-tune of ABS and rebuild a new CW2 with ERCF sensor.
+  - Installed tinyfan board.
+  - Succeeded at animated toolhead LEDs. It's kind of obnoxious at times. Need to set the nozzle LEDs not to mimic the rainbow barf.
+  - Cleaned up toolhead umbilical and much of the ugly wiring. Did not replace LED ribbon with black (yet). Would rather print 2020 slot covers to hide the wires.
+  - Mounted thermistor (only slightly half assed).
