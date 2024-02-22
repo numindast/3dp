@@ -258,7 +258,15 @@ To do:
 2/17/2024: 1590h 21m 12s
   - New toolhead is working well, with the caveat that loading filament absolutely sucks. Plan is to fix up everything else on the printer that's been needing attention and circle
     back to this, perhaps with a re-tune of ABS and rebuild a new CW2 with ERCF sensor.
-  - Installed tinyfan board.
+  - Installed tinyfan board, however, all fans I've tried run at random speeds at startup and idle even when klipper says "off". Ordered a new one, and for now,
+    running fans off the Spider instead.
   - Succeeded at animated toolhead LEDs. It's kind of obnoxious at times. Need to set the nozzle LEDs not to mimic the rainbow barf.
   - Cleaned up toolhead umbilical and much of the ugly wiring. Did not replace LED ribbon with black (yet). Would rather print 2020 slot covers to hide the wires.
   - Mounted thermistor (only slightly half assed).
+
+2/22/2024: 1617h 19m 22s
+  - G2E works well enough, still sucks loading filament. Now printing 0.1mm layer height CW2 and G2E back plates and investigating
+    an ERCF G2E hacky-mod on printables for G2E with Filametrix and dual sensors. Hacky because the CAD for G2E is not released so it's a hack piece.
+  - Added Reflectix panels to top and back. Stable chamber temps went from 55c to 65c. (wow!)
+  - Re-cut PTFE between extruder and hot end a tiny bit longer. Seems to have helped a little. Loading filament still gets stuck inside the extruder.
+
