@@ -270,3 +270,6 @@ To do:
   - Added Reflectix panels to top and back. Stable chamber temps went from 55c to 65c. (wow!)
   - Re-cut PTFE between extruder and hot end a tiny bit longer. Seems to have helped a little. Loading filament still gets stuck inside the extruder.
 
+4/6/2024: 2006h 17m 58s
+  - Printer is still workin'. Added ACM panel to top and have deck & back panels to install. May buy some insulation board to use either inside or outside depending on looks.
+  - Loading filament still sucks but will try using load/unload macros and see if I have a drill bit small enough to chamfer the PTFE tube in the hot end.
