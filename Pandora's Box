@@ -1,10 +1,6 @@
-scratch area
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Found canbus_uuid=5626e77ac427, Application: Klipper <-- should be the toolhead
-Found canbus_uuid=79bcd91e4cd5, Application: CanBoot <-- should be the mcu
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-scratch area end
+###
+### David's Pandora's Box
+###
 
 Start of notes. Much to be added.
 
@@ -19,9 +15,14 @@ Controller: BTT EBB36 v1.2
   firmware: 
 
 
+4/10/2024: 0 hours
+  - Stepper drivers (2209's) are installed; AB motors use diag pins so no endstops on MIN1/MIN2 possible. The Z motors don't.
+  - Z endstop is on MIN3
+  - All steppers buzz correctly (yet to test extruder), toolhead fans work properly, hot end heats up and temps look correct.
+
+
 4/8/2024: 0 hours
   - First boot: klipper v0.12.0-143 successfully running on the Manta via SD card (omg, full size SD card, not even mini or micro). Hopeful to attain DFU mode.
-  - 
 
 4/6/2024: 0 hours
   - Wired the AC combo inlet to the power supply. Made the ground cord long enough to reach some Wago's if I decide I want more grounding available.
