@@ -17,6 +17,12 @@ Notes:
   klicky_pcb is the Z endstop pin since the nozzle can't reach behind the bed in a pandoraboxen.
     --> https://github.com/T4KUUY4/Voron-Stuff/tree/main/KlickyProbeZoffset
 
+4/15/2024: +0 hours
+  - First plastik pushed! Swapped to Rapido hot end, wired up skirt fans. Still strongly considering redoing the electronics bay. The power supply
+    is too long and hangs below the skirts. May just buy a Mornsun 200w or LRS-150 and mount the traditional way. If I have a bottom panel, I want it to fit,
+    which probably means doing away with the FT EMS.
+  - LEDs are still screwed up, needs work.
+  - First print is PA tune on polylite pla. Brass 0.4 nozzle installed.
 
 4/10/2024: 0 hours
   - Stepper drivers (2209's) are installed; AB motors use diag pins so no endstops on MIN1/MIN2 possible. The Z motors don't.
