@@ -17,6 +17,16 @@ Notes:
   klicky_pcb is the Z endstop pin since the nozzle can't reach behind the bed in a pandoraboxen.
     --> https://github.com/T4KUUY4/Voron-Stuff/tree/main/KlickyProbeZoffset
 
+4/23/2024: 1h 55m 16s (!!!)
+  - Finished! Completed wiring, completed adding two matchstick lights, mounted controller to LM200 power supply which is VHB'd at each end to
+    mounting brackets from the mods folder on PB github, which screw holes don't work for this model so it's just hanging by VHB and I expect it to fall one day.
+    At that point the option is to stick the PSU to the deck plate directly and remove the brackets or design something custom.
+  - DragonBurner cowling still has klicky integration, and questionable LEDs. May swap for a non-probe cowling (very clean) and redo the LEDs.
+  - Printed two test cubes at this point. That's all, but they came out glorious.
+  - All panels mounted, all skirts done, drag chain, a sketchy CAN cable / toolhead PCB mount that's gonna come loose someday.
+  - The nameplate near the front of the deck doesn't fit. It's ACM so not sure I have anything that can cut this. Probably going to print something to fit.
+  - SERIALED! P.036
+
 4/15/2024: +0 hours
   - First plastik pushed! Swapped to Rapido hot end, wired up skirt fans. Still strongly considering redoing the electronics bay. The power supply
     is too long and hangs below the skirts. May just buy a Mornsun 200w or LRS-150 and mount the traditional way. If I have a bottom panel, I want it to fit,
