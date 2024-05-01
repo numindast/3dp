@@ -17,6 +17,11 @@ Notes:
   klicky_pcb is the Z endstop pin since the nozzle can't reach behind the bed in a pandoraboxen.
     --> https://github.com/T4KUUY4/Voron-Stuff/tree/main/KlickyProbeZoffset
 
+4/30/2024: 54h 50m 26s
+  - Replaced chewed up belt with EPDM spare belt. Chewed up a bit of that before disassembling the B drive frame and discovering a bearing stack had an extra washer.
+    Running the printer at high speeds and high accels have been flawless ever since. Purchased aluminum M3 spacers (6x9) but have not installed them since the washer discovery.
+  - Printed a bunch of PLA with 0.4 brass nozzle, now switching to 0.2 brass and tuning PLA for it.
+
 4/23/2024: 1h 55m 16s (!!!)
   - Finished! Completed wiring, completed adding two matchstick lights, mounted controller to LM200 power supply which is VHB'd at each end to
     mounting brackets from the mods folder on PB github, which screw holes don't work for this model so it's just hanging by VHB and I expect it to fall one day.
