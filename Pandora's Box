@@ -1,6 +1,6 @@
 ###
 ### David's Pandora's Box
-###
+### Serial number P.036
 
 Start of notes. Much to be added.
 
@@ -16,6 +16,11 @@ Controller: BTT EBB36 v1.2
 Notes:
   klicky_pcb is the Z endstop pin since the nozzle can't reach behind the bed in a pandoraboxen.
     --> https://github.com/T4KUUY4/Voron-Stuff/tree/main/KlickyProbeZoffset
+
+5/4/2024: ??
+  - EPDM belt was getting chewed on too. Took the B drive top frame off carefully and disassembled the bearing stacks. One extra washer. Yup. That'd do it.
+  - Purchased M3 6mm x 9mm spacers to replace the printed ones, as I was concerned about them, perhaps without basis.
+  - Printed a bunch of PLA but now toolhead is losing connection with the CAN so have to investigate. Perhaps a better umbilical mount.
 
 4/30/2024: 54h 50m 26s
   - Replaced chewed up belt with EPDM spare belt. Chewed up a bit of that before disassembling the B drive frame and discovering a bearing stack had an extra washer.
