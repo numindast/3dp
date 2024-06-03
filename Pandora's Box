@@ -17,6 +17,17 @@ Notes:
   klicky_pcb is the Z endstop pin since the nozzle can't reach behind the bed in a pandoraboxen.
     --> https://github.com/T4KUUY4/Voron-Stuff/tree/main/KlickyProbeZoffset
 
+6/2/2024: 107h 31m 36s
+  - Installed the spacers. Replaced the two 4010 part cooling fans, one wasn't working. Tracked down the lost CAN toolhead communication to a break
+    in the CAN umbilical wire. Which is the stuff BTT ships with SB2209's. That is very annoying. Cut another stretch to use and installed (from the same donor cable...)
+
+  // Using 0.4mm west3d 'undertaker' nozzle now. Rapido HF still installed.
+  // Fitted shaper 'mzv' frequency = 51.4 Hz (vibrations = 2.3%, smoothing ~= 0.087)
+  // To avoid too much smoothing with 'mzv', suggested max_accel <= 7800 mm/sec^2
+  // Fitted shaper '2hump_ei' frequency = 106.8 Hz (vibrations = 0.0%, smoothing ~= 0.060)
+  // To avoid too much smoothing with '2hump_ei', suggested max_accel <= 12700 mm/sec^2
+
+
 5/4/2024: ??
   - EPDM belt was getting chewed on too. Took the B drive top frame off carefully and disassembled the bearing stacks. One extra washer. Yup. That'd do it.
   - Purchased M3 6mm x 9mm spacers to replace the printed ones, as I was concerned about them, perhaps without basis.
