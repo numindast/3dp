@@ -279,3 +279,8 @@ To do:
     foam board, but home depot is "construction size" and way too big, will look elsewhere.
   - tinyfan is up and running. Two Wakefield-Vette fans, 24v with PWM and tach, for the skirts; and a Noctua for the exhaust, which is damn near silent and possibly may
     be not very effective but I will absolutely appreciate the silence.
+
+7/22/2024: 2436h 19m 38s
+  - Still trucking. Last working decent print sheet is Fysetc textured PEI. The rest have been trashed or set aside so they don't get ruined.
+  - Removed the noctua fan and put a GDStime 24v in its place. This moves significantly more air at all speeds
+  - Bought a Beacon rev H, intended for doomcube, but it's now installed on the trident. TAP has been removed.
