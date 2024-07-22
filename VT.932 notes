@@ -17,13 +17,6 @@ General state of features over a stock Trident:
  - Two bed fans
  - Tinyfan controller with 4-wire exhaust fan
 
-~~~ TO DO ~~~
-2. wire covers for 2020 channels for lighting wiring
-5. redo light bar baffles in white ABS or ASA - one of 3 done, looks great
-6. serial connection from Pi to yawl-controller
-7. find a way to make the Pi camera FPC not ugly...
-8. Replace non-silicone wiring for LED sticks with silicone. There's a poor connection somewhere and causes issues at startup.
-
 tinyfan pins: 
   FAN1_PWM, FAN1_RPM (for the exhaust fan)
   FAN4_PWM (for the skirt fans)
@@ -32,28 +25,11 @@ tinyfan pins:
 controller fans:
   fan0: PA13 - nevermore
 
-optoTAP:
-use IO.2 on sb-can-toolhead.
-pin1 = 5v (NOTE: silkscreen says 24v, however wiki has well documented this error and it really is 5v.)
-pin2 = gnd
-pin3 = signal / IO.2 (PB7)
-pin3 = closest to stepper connector.
-
-toolhead pcb:
-silkscreen errors: IO.2 (PB7) silkscreen says 24v, this is actually 5v
-silkscreen errors: (PB6) is actually 24v, not 5v as printed
-silkscreen errors: IN.0 (PA3) is actually 24v, not 5v as printed
-also CANL and CANH are "TX and RX" respectively as printed.
-
-IN.0 = (was X endstop, but since the filament sensor switch is disconnected, moving x endstop for ease of JST-PH connecting.)
-IO.1 = X endstop (was ERCF filament sensor)
-IO.2 = optoTAP sensor
-
 --
 Compiling all the firmware.
 Yikes. This is a long way from an ender 3.
 
-Spider v2.2: https://wiki.fysetc.com/Spider/#421-menuconfig
+mcu: Spider v2.2: https://wiki.fysetc.com/Spider/#421-menuconfig
   1. Enable extra low level configuration options
      1.1 Microcontroller architecture: STM32F446 / 12 MHz crystal / 32KIB BOOTLOADER / Serial (on USART1 PA10/PA9)
      1.2 GPIO pins to set at startup: String = !PA13 (why? because the bright red LED for this unused fan port is annoying, and default at boot is ON)
@@ -64,30 +40,13 @@ Spider v2.2: https://wiki.fysetc.com/Spider/#421-menuconfig
        ./scripts/flash-sdcard.sh /dev/ttyAMA0  fysetc-spider
        sudo service klipper start
      
-Toolhead PCB: Fysetc SB-CAN-TH using whatever bootloader Fysetc put on it
-  Refer to https://wiki.fysetc.com/SB%20CAN%20ToolHead/#32-firmware-upload
-  
-  1. Enable extra low level configuration options
-     1.1 Microcontroller architecture: STM32F072 / no bootloader offset / 8 MHz crystal / CAN bus PB8/PB9 / CAN speed 500000
-  2. Flash to the toolhead:
-     2.1. Power down the printer, but keep Pi powered on. Attach USB cable from toolhead to the Pi. Power the printer back on.
-     2.2. Check 'lsusb' to show the toolhead board in DFU mode
-     3.3. dfu-util -R -a 0 -s 0x08000000:leave -D out/klipper.bin
-   
-Toolhead PCB: Fysetc SB-CAN-TH using CanBoot bootloader
-  NOTE: could not get this to work. I don't think it's entering the bootloader after flashing canboot, and there's no hardware reset/boot
-        switches to force entry into the bootloader.
-        
-  Refer to https://www.klipper3d.org/Bootloaders.html#stm32f103stm32f0x2-with-canboot-bootloader
+mcu: tinyfan
+  1. make menuconfig: RP2040 / flash GENERIC_03H with CLKDIV 4 / USB / n/a / !gpio0,!gpio1,!gpio2
+     the pins to set at startup make sure none are active, eg, running full blast while booting.
+  2. stop klipper; hold down boot and press reset; sudo mount /dev/sda1 /mnt && sudo cp out/klipper.uf2 /mnt && sudo umount /mnt
 
-  LED is on PA1
-  CANbus UUID is 64f6fabd418a
-     
- raspberry pi MCU: (used for the BME680 environmental sensor)
-   1. Microcontroller architecture: Linux process
-   2. make
-   3. make flash
-   
+mcu: toolhead (ebb36)
+  1. 
 --
 since last update:
 installed TAP
