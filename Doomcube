@@ -24,3 +24,18 @@ The Filter (with magnetic power connector)
     Z Build area: +100mm (+$7.50) 
     Frame Size: 300mm (+$15.00) 
     Color: Copper Chop
+
+Config notes:
+  - debian bullseye rolled out NetworkManager (for bookworm, this is now default). Suspect /network/interfaces.d/can0 references ifconfig for txqueuelen that's being ignored.
+    dsavlin@doomcube:/etc/network/interfaces.d $ cat can0
+      allow-hotplug can0
+        iface can0 can static
+      bitrate 1000000
+      up ifconfig  txqueuelen 128
+
+      dsavlin@doomcube:/etc/network/interfaces.d $ ifconfig can0
+        can0: flags=193<UP,RUNNING,NOARP>  mtu 16
+          unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 10  (UNSPEC)
+    Changed "up ifconfig txqueuelen 128" to "up ip link set $IFACE txqueuelen 128" and rebooted pi.
+    This seems to have had the desired effect, txqueuelen is now 128 in the output from ifconfig.
+    Why? Was getting "mcu: timer too close" shutdowns by merely homing axis.
