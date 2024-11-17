@@ -243,3 +243,14 @@ To do:
   - Still trucking. Last working decent print sheet is Fysetc textured PEI. The rest have been trashed or set aside so they don't get ruined.
   - Removed the noctua fan and put a GDStime 24v in its place. This moves significantly more air at all speeds
   - Bought a Beacon rev H, intended for doomcube, but it's now installed on the trident. TAP has been removed.
+
+11/16/2024: 3024h 47m 39s
+  - Needed to take apart the hot end to check wiring as I want to use the backup front on the doomcube. In the process, discovered the lower SB front where the two screw holes
+    join together by a ridge of plastic. That whole thing was broken off. The backup front got installed to the VT instead, downgrade from rainbow barf to just a single logo LED
+    but everything else fits jus' fine.
+  - Still using Fysetc textured PEI as I'm afraid to lift the sheet off and take huge chunks of magnet with it.
+  - Beacon is beautiful. That is all.
+  - Bought two Sunon MagLev skirt fans, same as purchased for the doomcube. They move air decently and quietly at 100%. The current VT skirt fans have ball bearings and whine like
+    crazy. I've decided a tinyfan and 4 pin ball bearing skirt fans are not worth keeping and will be removed.
+  - Bought two VINDR blowers to replace bed fans with when the day comes.
+  - Will need a new magnet sheet and print surface eventually to rehab the bed.
