@@ -4,20 +4,28 @@ Personal notes on a doomcube build.
 
 LDO Leviathan MCU
 Klipper Expander (bottom bay; for bed thermistor, SSR)
-BTT Pi4B v1 adaptor with CM4108032 (8gb, 32gb eMMC)
+BTT Pi4B v1 adaptor with Raspberry Pi CM4 (CM4108032: 8gb, 32gb eMMC)
 Waveshare 4.3" DSI LCD display
 The Filter (with magnetic power connector)
+Beacon Rev.H
+Galileo G2E extruder + StealthBurner Filametrix dual-sensor/lever switch
+Rapido HF (v1)
 
 300x300x300 build volume
 Possibly higher Z however umbilicals/PTFE tube may get squashed beyond what's reasonable.
 
 Firmware updates
 ~~~~~~~~~~~~~~~~
-Leviathan MCU is in USB-CANbus-Bridge mode. It's connected to the Pi via USB. We are not using CANbus for toolhead though. That is straight-wired using a harness.
-https://canbus.esoterical.online/mainboard_flashing/common_hardware/LDO%20Leviathan/README.html
+Leviathan MCU is in USB-CANbus-Bridge mode. It's connected to the Pi via USB. 
+We are not using CANbus for toolhead though. That is straight-wired using a passive PCB on the toolhead.
+  https://canbus.esoterical.online/mainboard_flashing/common_hardware/LDO%20Leviathan/README.html
 
-Klipper Expander is USB-connected. Must access the physical boot/reset buttons to put into DFU mode. (This sucks.)
-https://github.com/VoronDesign/Voron-Hardware/blob/master/Klipper_Expander/Documentation/Setup_and_Flashing_Guide.md
+Klipper Expander is USB-connected.
+  Here's the config for compiling:
+  https://github.com/VoronDesign/Voron-Hardware/blob/master/Klipper_Expander/Documentation/Setup_and_Flashing_Guide.md
+
+  and this is how to flash it without accessing the physical boot jumper and reset button:
+  https://usb.esoterical.online/
 
 
 
