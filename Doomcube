@@ -11,6 +11,15 @@ The Filter (with magnetic power connector)
 300x300x300 build volume
 Possibly higher Z however umbilicals/PTFE tube may get squashed beyond what's reasonable.
 
+Firmware updates
+~~~~~~~~~~~~~~~~
+Leviathan MCU is in USB-CANbus-Bridge mode. It's connected to the Pi via USB. We are not using CANbus for toolhead though. That is straight-wired using a harness.
+https://canbus.esoterical.online/mainboard_flashing/common_hardware/LDO%20Leviathan/README.html
+
+Klipper Expander is USB-connected. Must access the physical boot/reset buttons to put into DFU mode. (This sucks.)
+https://github.com/VoronDesign/Voron-Hardware/blob/master/Klipper_Expander/Documentation/Setup_and_Flashing_Guide.md
+
+
 
 4/6/2024: placed order with dllpdf:
   DoomCube2 panel set: 
