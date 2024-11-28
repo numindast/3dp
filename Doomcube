@@ -27,7 +27,12 @@ Klipper Expander is USB-connected.
   and this is how to flash it without accessing the physical boot jumper and reset button:
   https://usb.esoterical.online/
 
+11/28/2024: 47h 46m 24s
+  So far, so good. Still a number of things left to do, but a functional toolhead and functional print capability is a real plus.
+  Toolhead has working dual filament sensors (Filametrix) but don't have the cutter in use, the gantry piece isn't even installed yet. ERCF build getting started.
 
+  Much of the progress has been documented here. (Doomcube discord.)
+  https://discord.com/channels/825469421346226226/1256336493350223985
 
 4/6/2024: placed order with dllpdf:
   DoomCube2 panel set: 
