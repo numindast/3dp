@@ -1,26 +1,21 @@
-General state of features over a stock Trident:
+General state of this Fysetc Trident 300x300x250 build:
 
- - Dual power switches. One for the 5v PSU to allow the Pi to be powered separately from the controller.
- - Thermal fuse RTV'd onto the heat mat rather than at the edge.
- - Heater mat RTV'd along edges to build plate. (It is not melting off. I messed with it before the RTV set, so it looks like salvador dali's print bed.)
+ - Dual power switches. 5v PSU on its own switch to power Pi and lights.
+ - Heater mat RTV'd along edges to build plate. (with ugly application but sitll solid.)
  - Wago (genuine) connectors for all mains wiring with ferruled wires.
- - Heatsink with (very) kludgy thermistor attached with RTV for the SSR. In practice, it barely throws off any heat.
+ - Panasonic 15A SSR with heatsink with thermistor RTVd to it. In practice, it barely throws off any heat even without fans.
  - BTT SB2209 toolhead CAN board and umbilical.
- - X and Y axis endstops relocated to side of TAP and back of right side Y extrusion. No more drag chains.
- - Stealthburner with LDO Galileo 2 from dfh and Rapido HF and rainbow barf logo LEDs
- - BTT PiTFT 5" LCD with elegant skirt mount (DSI driven, capacitive touch, LED backlit, rotary encoder for brightness, powered by DSI)
+ - Umbilical to toolhead with relocated X and Y axis endstop switches.
+ - Stealthburner with LDO Galileo 2 and Rapido HF (gen1). Undertaker 0.4 nozzle installed.
+ - BTT PiTFT 5" LCD
  - Raspberry Pi CM4 4gb/32gb on board with wifi (so 4104032) on a Waveshare carrier (CM4-IO-BASE-B rev4)
- - Pi Camera v3 wide angle tucked over left side front idler. Need a better way to run the FPC cable. Might not be the best location.
- - yawl-controller (esp8266) running WLED to drive 3 disco-on-a-sticks
- - BME680 temp/humidity/barometer/gas sensor attached to Pi I2C
- - Nevermore mounted vertical against back right with airflow going straight up
- - Two bed fans
- - Tinyfan controller with 4-wire exhaust fan
+ - Pi Camera v3 wide angle tucked over left side front idler. The mount sucks but functions.
+ - yawl-controller (esp8266) running WLED to drive 3 disco+cw sticks of 18 LEDs each. I believe SK6812 with cool white.
+ - Nevermore v2 with HEPA filter.
+ - Two bed fans. Skirt fans are quiet Sunon MagLev.
+ - Freshly re-mag-sheeted Fysetc aluminum bed (1/2/2025).
+ 
 
-tinyfan pins: 
-  FAN1_PWM, FAN1_RPM (for the exhaust fan)
-  FAN4_PWM (for the skirt fans)
-  LED (ws2812 on board?)
 
 controller fans:
   fan0: PA13 - nevermore
