@@ -20,6 +20,9 @@ Leviathan MCU is in USB-CANbus-Bridge mode. It's connected to the Pi via USB.
 We are not using CANbus for toolhead though. That is straight-wired using a passive PCB on the toolhead.
   https://canbus.esoterical.online/mainboard_flashing/common_hardware/LDO%20Leviathan/README.html
 
+BoxTurtle AFC-Lite is connected via CANbus to the Leviathan.
+  https://github.com/xbst/AFC-Lite/blob/master/Docs/AFC-Lite_Manual.pdf
+
 Klipper Expander is USB-connected.
   Here's the config for compiling:
   https://github.com/VoronDesign/Voron-Hardware/blob/master/Klipper_Expander/Documentation/Setup_and_Flashing_Guide.md
