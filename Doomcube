@@ -67,3 +67,18 @@ Config notes:
     Changed "up ifconfig txqueuelen 128" to "up ip link set $IFACE txqueuelen 128" and rebooted pi.
     This seems to have had the desired effect, txqueuelen is now 128 in the output from ifconfig.
     Why? Was getting "mcu: timer too close" shutdowns by merely homing axis.
+
+3/27/2025: long overdue updates. 519h 19m 55s total print time
+  - Current status:
+    a. Filametrix toolhead with pre- and post-extruder filament sensors using G2E and lever switches. (https://github.com/juliusjj25/G2E-Filametrix-Lever-Switch-Mod)
+    b. A drive frame has broken cable retainer. (Considering going umbilical for Z chain too. Maybe.)
+    c. Hot end is Rapido HF (gen1). If it breaks, will switch to Bambu hot end. Much less expensive, performs about the same, according to the Internet.
+    d. Consider moving CM4 Pi to on board the Leviathan controller, or, perhaps, buy a CM4 PoE/UPS board.
+
+- Items to work on:
+    a. Replace belts. One front idler was crooked and led to some shredding. Fixed the crooked but belts are still there, no longer shedding material.
+    b. Replace thermistor on the chamber heater with flat thin film one mounted closer to heater core.
+    c. Add thermistor to top deck panel; maybe add thermistor to toolhead (requires running 2 wires, might not get done anytime soon)
+    d. Remove camera USB cable from bottom deck. There's nowhere to mount a camera down that way.
+    e. Blobifier with gantry-mounted brush holder (tbd)
+    f. Box Turtle build continues
