@@ -1,0 +1,23 @@
+The printer's skirts and interior lighting are run by WLED.
+
+The hardware is a QuinLED Dig Uno with a QuinLED ESP32 (external antenna).
+
+
+output 1: 3 sticks of 22 addressable rgbw: right, front, left
+
+output 2: matrices: 432 length
+
+first panel (zero): first led, bottom right. Snakes up then down etc.
+panel 1: front right top
+>> insert gap for full panel here
+panel 2: front left top
+panel 3: right side top
+panel 4: right side bottom
+panel 5: front right bottom
+panel 6: front middle bottom
+panel 7: front left bottom
+panel 8: side left bottom
+
+5 panels wide = 60 leds wide
+2 panels tall = 8 leds tall
+
