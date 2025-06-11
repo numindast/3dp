@@ -14,6 +14,10 @@ Rapido HF (v1)
 300x300x300 build volume
 Possibly higher Z however umbilicals/PTFE tube may get squashed beyond what's reasonable.
 
+LEDs:
+  3x light sticks for top of chamber, 22 LED, RGBW
+  9x 4x12 WS2812b LED panels, 432 LEDs in all
+
 Firmware updates
 ~~~~~~~~~~~~~~~~
 Leviathan MCU is in USB-CANbus-Bridge mode. It's connected to the Pi via USB. 
